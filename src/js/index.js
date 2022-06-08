@@ -2,9 +2,7 @@ const refs = {
   button: document.querySelector(".main-section__button"),
   modalWindow: document.querySelector(".backdrop"),
   closeBtn: document.querySelector(".popup__close-btn"),
-  //   popup: document.querySelector(".popup"),
-  c: document.querySelector(".popup__accent"),
-  //   counter: document.querySelector(".popup__text"),
+  counter: document.querySelector(".popup__accent"),
   resetBtn: document.querySelector(".popup__reset-btn"),
 };
 
@@ -17,7 +15,6 @@ resetBtn.addEventListener("click", resetCouner);
 
 let count = 0;
 const Storage_Key = "count-value";
-// savedValue();
 
 function openModalWindow() {
   window.addEventListener("keydown", onEscKeyPress);
@@ -62,13 +59,3 @@ function resetCouner() {
   resetBtn.classList.add("visually-hidden");
   localStorage.removeItem("count-value");
 }
-
-// function savedValue() {
-//   const savedLocalStorageKey = localStorage.getItem(Storage_Key);
-//   console.log(savedLocalStorageKey);
-
-//   if (savedLocalStorageKey) {
-//     console.log(savedLocalStorageKey);
-//     c.textContent = `${savedLocalStorageKey}`;
-//   }
-// }
