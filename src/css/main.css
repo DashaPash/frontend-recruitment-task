@@ -123,7 +123,7 @@ body {
   font-size: 16px;
   width: 128px;
   height: 48px;
-  padding: 16px, 40px, 16px, 40px;
+  /* padding: 16px, 40px, 16px, 40px; */
   border: none;
   border-radius: 32px;
   background-color: var(--button-color);
@@ -133,8 +133,119 @@ body {
   cursor: pointer;
 }
 
-.main-section__button:hover {
+.main-section__button:hover,
+.main-section__button:focus {
   background-color: var(--button-accent-color);
 }
 
 /* -------- main section ---------*/
+
+/* ---------modal window --------- */
+
+.backdrop {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: opacity 250ms var(--cubic-bezier),
+    visibility 250ms var(--cubic-bezier);
+}
+
+.popup {
+  background-color: var(--wite-color);
+  width: 920px;
+  height: 210px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* overflow-y: auto; */
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 767px) {
+  .popup {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .popup {
+    width: 550px;
+    height: 210px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .popup {
+    position: relative;
+    width: 920px;
+    height: 210px;
+    /* transform: translate(-50%, -50%); */
+  }
+}
+
+.popup__title {
+  font-weight: 700;
+  font-size: 42px;
+  padding-top: 56px;
+  margin-left: 95px;
+  padding-bottom: 24px;
+}
+
+.popup__text {
+  font-weight: 300;
+  font-size: 16px;
+  margin-left: 95px;
+  padding: 0px;
+}
+
+.popup__accent {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.popup__close-btn {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  width: 24px;
+  height: 24px;
+  padding: 0px;
+  border: none;
+  background-color: transparent;
+  outline: 1px solid red;
+}
+
+.popup__reset-btn {
+  position: absolute;
+  left: 50%;
+  bottom: 10%;
+  color: var(--wite-color);
+  font-weight: 700;
+  font-size: 16px;
+  width: 100px;
+  height: 30px;
+  /* padding: 16px, 40px, 16px, 40px; */
+  border: none;
+  border-radius: 32px;
+  background-color: var(--button-color);
+  color: var(--wite-color);
+  box-shadow: var(--shadow);
+  transition: background-color 250ms var(--cubic-bezier);
+  cursor: pointer;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
