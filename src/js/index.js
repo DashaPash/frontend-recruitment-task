@@ -1,3 +1,5 @@
+import "./sass/main.scss";
+
 const refs = {
   button: document.querySelector(".main-section__button"),
   modalWindow: document.querySelector(".backdrop"),
@@ -6,7 +8,7 @@ const refs = {
   resetBtn: document.querySelector(".popup__reset-btn"),
 };
 
-const { button, modalWindow, closeBtn, counter, resetBtn, c } = refs;
+const { button, modalWindow, closeBtn, counter, resetBtn } = refs;
 
 button.addEventListener("click", openModalWindow);
 closeBtn.addEventListener("click", closeModalWindow);

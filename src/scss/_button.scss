@@ -1,0 +1,12 @@
+%button {
+  color: var(--wite-color);
+  font-weight: 700;
+  font-size: 16px;
+  border: none;
+  border-radius: 32px;
+  background-color: var(--button-color);
+  color: var(--wite-color);
+  box-shadow: var(--shadow);
+  transition: background-color 250ms var(--cubic-bezier);
+  cursor: pointer;
+}
