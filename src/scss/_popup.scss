@@ -1,5 +1,5 @@
 .popup {
-  background-color: var(--wite-color);
+  background-color: $wite-color;
   width: 920px;
   height: 210px;
   position: absolute;
@@ -23,7 +23,7 @@
     height: 210px;
   }
 
-  &____title {
+  &__title {
     @extend %title;
     padding-top: 56px;
     margin-left: 95px;
@@ -41,7 +41,7 @@
     font-size: 16px;
   }
 
-  &____close-btn {
+  &__close-btn {
     position: absolute;
     top: 40px;
     right: 40px;

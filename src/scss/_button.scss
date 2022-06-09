@@ -1,12 +1,12 @@
 %button {
-  color: var(--wite-color);
+  color: $wite-color;
   font-weight: 700;
   font-size: 16px;
   border: none;
   border-radius: 32px;
-  background-color: var(--button-color);
-  color: var(--wite-color);
-  box-shadow: var(--shadow);
-  transition: background-color 250ms var(--cubic-bezier);
+  background-color: $button-color;
+  color: $wite-color;
+  box-shadow: $shadow;
+  transition: background-color 250ms $cubic-bezier;
   cursor: pointer;
 }

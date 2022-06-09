@@ -1,4 +1,4 @@
--------- main section --------- .main-section {
+/* -------- main section --------- .main-section {
   margin-left: auto;
   margin-right: auto;
 }
@@ -112,7 +112,7 @@
 /* -------- main section ---------*/
 
 /* ---------modal window --------- */
-
+/* 
 .backdrop {
   position: fixed;
   width: 100%;
@@ -163,8 +163,8 @@
   padding-top: 56px;
   margin-left: 95px;
   padding-bottom: 24px;
-}
-
+} */
+/* 
 .popup__text {
   font-weight: 300;
   font-size: 16px;
@@ -219,10 +219,9 @@
 .visually-hidden {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-  clip: rect(1px, 1px, 1px, 1px);
+/* clip: rect(1px, 1px, 1px, 1px);
   padding: 0 !important;
   border: 0 !important;
   height: 1px !important;
   width: 1px !important;
-  overflow: hidden;
-}
+  overflow: hidden; */

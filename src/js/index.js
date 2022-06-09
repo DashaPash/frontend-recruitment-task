@@ -1,5 +1,3 @@
-import "./sass/main.scss";
-
 const refs = {
   button: document.querySelector(".main-section__button"),
   modalWindow: document.querySelector(".backdrop"),
@@ -48,7 +46,7 @@ button.addEventListener("click", () => {
   count++;
   console.log(count);
   localStorage.setItem(Storage_Key, count);
-  c.textContent = `${count}`;
+  counter.textContent = `${count}`;
 
   if (count >= 5) {
     resetBtn.classList.remove("visually-hidden");
@@ -57,7 +55,7 @@ button.addEventListener("click", () => {
 
 function resetCouner() {
   count = 0;
-  c.textContent = `${count}`;
+  counter.textContent = `${count}`;
   resetBtn.classList.add("visually-hidden");
   localStorage.removeItem("count-value");
 }
