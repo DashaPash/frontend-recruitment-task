@@ -7,14 +7,13 @@ const refs = {
 };
 
 const { button, modalWindow, closeBtn, counter, resetBtn } = refs;
+let count = 0;
+const Storage_Key = "count-value";
 
 button.addEventListener("click", openModalWindow);
 closeBtn.addEventListener("click", closeModalWindow);
 modalWindow.addEventListener("click", onBackdropClick);
 resetBtn.addEventListener("click", resetCouner);
-
-let count = 0;
-const Storage_Key = "count-value";
 
 function openModalWindow() {
   window.addEventListener("keydown", onEscKeyPress);

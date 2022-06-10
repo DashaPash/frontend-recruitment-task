@@ -1,8 +1,8 @@
-@import "./variables";
-@import "./visually-hidden";
-@import "./base";
-@import "./text";
-@import "./button";
-@import "./main-section";
-@import "./backdrop";
-@import "./popup";
+@import "./utils/variables";
+@import "./utils/visually-hidden";
+@import "./base/base";
+@import "./components/text";
+@import "./components/button";
+@import "./layout/main-section";
+@import "./layout/backdrop";
+@import "./layout/popup";
